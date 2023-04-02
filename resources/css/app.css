@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen and (min-width: 768px) {
+    form {
+        display:-moz-inline-grid;
+        flex-wrap: wrap;
+        justify-content:left;
+    }
+ 
+    form div {
+        width: 50%;
+    }
+ 
+    /* replace "1" with the number of the first field that you want to align horizontally on 3 columns */
+    .form>*:nth-child(1),
+    /* replace "2" with the number of the second field that you want to align horizontally on 3 columns */
+    .form>*:nth-child(2),
+    /* replace "3" with the number of the third field that you want to align horizontally on 3 columns */
+    .form>*:nth-child(3){
+        width: 32%;
+    }
+}
