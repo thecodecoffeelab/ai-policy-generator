@@ -1,32 +1,6 @@
 @extends('welcome')
 @include('sweetalert::alert')
 @section('content')
-<style>
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@media screen and (min-width: 768px) {
-    form {
-        display:-moz-inline-grid;
-        flex-wrap: wrap;
-        justify-content:left;
-    }
- 
-    form div {
-        width: 50%;
-    }
- 
-    /* replace "1" with the number of the first field that you want to align horizontally on 3 columns */
-    .form>*:nth-child(1),
-    /* replace "2" with the number of the second field that you want to align horizontally on 3 columns */
-    .form>*:nth-child(2),
-    /* replace "3" with the number of the third field that you want to align horizontally on 3 columns */
-    .form>*:nth-child(3){
-        width: 32%;
-    }
-}
-</style>
     <div class="bg-white">
         <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8 text-center">
         <img src="{{ url('images/pc.png')}}" alt="" width="300" height="100">
